@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MuoviPiastra : MonoBehaviour
 {
-    int speedAmt;
+    int speedAmt = 5;
 
     void Start()
     {
@@ -13,14 +13,14 @@ public class MuoviPiastra : MonoBehaviour
 
     void Update()
     {
-        if(transform.position.z >= -22.62)
+        if(transform.position.x <= -0.65)
         {
-            speedAmt = -10;
+            speedAmt = 3;
         }
-        if(transform.position.z <= -39.58)
+        if(transform.position.x >= 3)
         {
-            speedAmt = 10;
+            speedAmt = -3;
         }
-        transform.Translate(0, 0, speedAmt * Time.deltaTime);
+        transform.Translate( speedAmt * Time.deltaTime, 0, 0);
     }
 }
