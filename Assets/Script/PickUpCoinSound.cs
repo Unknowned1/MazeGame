@@ -42,6 +42,7 @@ public class PickUpCoinSound : MonoBehaviour
             Debug.Log("coin picked up");
 
             //gameObject.SetActive(false);
+            gameObject.transform.Translate(0, -10, 0);
             gold_coin.SetActive(false);
         }
     }
