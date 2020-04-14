@@ -2,17 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class PickUpCoinSound : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    private AudioSource audioSource;
+    public AudioClip coinSound;
+
     void Start()
     {
         
+        GetComponent<AudioSource>().clip = coinSound;
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    public void OnCollisionEnter(Collision col)
     {
-        
+        if (col.collider.tag == "Player"){
+
+            audioSource = GetComponent<AudioSource>();
+            audioSource.clip = coinSound;
+            audioSource.Play();
+            Debug.Log("coin picked up");
+            gameObject.SetActive(false);
+        }
     }
+    
 }
+
