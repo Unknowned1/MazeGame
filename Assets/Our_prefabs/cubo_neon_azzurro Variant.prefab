@@ -110,7 +110,7 @@ PrefabInstance:
     - target: {fileID: 340990059231968043, guid: 66c6daa1fa44bc54887be7e99288aa6c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.45
+      value: 1.4467
       objectReference: {fileID: 0}
     - target: {fileID: 340990059231968043, guid: 66c6daa1fa44bc54887be7e99288aa6c,
         type: 3}
@@ -162,10 +162,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 340990059231968043, guid: 66c6daa1fa44bc54887be7e99288aa6c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0776
+      objectReference: {fileID: 0}
     - target: {fileID: 340990059231968047, guid: 66c6daa1fa44bc54887be7e99288aa6c,
         type: 3}
       propertyPath: m_Name
-      value: cubo_neon_azzurro
+      value: cubo_neon_azzurro Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66c6daa1fa44bc54887be7e99288aa6c, type: 3}
