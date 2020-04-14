@@ -269,6 +269,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 92.559006
       objectReference: {fileID: 0}
+    - target: {fileID: 8368060729577688030, guid: 58b46672da577d34ea3a550513d078e6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2841596036507822070, guid: 58b46672da577d34ea3a550513d078e6, type: 3}
     - {fileID: 7024174574226931322, guid: 58b46672da577d34ea3a550513d078e6, type: 3}
@@ -648,6 +653,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 69b6265bc4e9b1a4ebbeb208f202adf9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!1 &1071426397
@@ -741,6 +750,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071426397}
   m_CullTransparentMesh: 0
+--- !u!1 &1220889753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8368060729577688030, guid: 58b46672da577d34ea3a550513d078e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 270218544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1284741346
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,6 +976,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinSound: {fileID: 8300000, guid: 69b6265bc4e9b1a4ebbeb208f202adf9, type: 3}
+  gold_coin: {fileID: 1220889753}
+--- !u!135 &1409994562
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409994556}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1719378624
 GameObject:
   m_ObjectHideFlags: 0
