@@ -7,16 +7,6 @@ public class TimerUp : MonoBehaviour
 {
     public Text timer_txt;
     
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
