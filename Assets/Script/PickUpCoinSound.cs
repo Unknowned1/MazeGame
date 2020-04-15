@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
 public class PickUpCoinSound : MonoBehaviour
@@ -41,6 +42,8 @@ public class PickUpCoinSound : MonoBehaviour
             audioSource.Play();
             Debug.Log("coin picked up");
 
+            GameObject.Find("coins").GetComponentInChildren<CoinUp>().total_coin += 1;
+            //GameObject.Find("coins").GetComponent<Text>().text = GameObject.Find("coins").GetComponent<Text>().text + GameObject.Find("coins").GetComponentInChildren<CoinUp>().total_coin;
             //gameObject.SetActive(false);
             gameObject.transform.Translate(0, -10, 0);
             gold_coin.SetActive(false);
