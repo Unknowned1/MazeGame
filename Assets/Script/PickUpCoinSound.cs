@@ -15,7 +15,7 @@ public class PickUpCoinSound : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         GetComponent<AudioSource>().clip = coinSound;
-        gold_coin = GetComponentInChildren<GameObject>();
+        gold_coin = GetComponent<GameObject>();
     }
 
     
