@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MuoviPiastra : MonoBehaviour
+public class MuoviMuro : MonoBehaviour
 {
     public int speedAmt;
     public float minimo, massimo;
@@ -15,14 +15,15 @@ public class MuoviPiastra : MonoBehaviour
 
     void Update()
     {
-        if(transform.position.x <= minimo)
+        if (transform.position.x <= minimo)
         {
             speedAmt1 = speedAmt;
         }
-        if(transform.position.x >= massimo)
+        if (transform.position.x >= massimo)
         {
             speedAmt1 = -speedAmt;
         }
-        transform.Translate( speedAmt1 * Time.deltaTime, 0, 0);
+        transform.Translate(0, 0,speedAmt1 * Time.deltaTime);
     }
 }
+
