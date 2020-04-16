@@ -10639,6 +10639,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0455010fabc0c1d4f8574ebea1b61b56, type: 3}
+--- !u!1 &284073063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8609903781756282540, guid: 0455010fabc0c1d4f8574ebea1b61b56,
+    type: 3}
+  m_PrefabInstance: {fileID: 284073062}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &284500136
 GameObject:
   m_ObjectHideFlags: 0
@@ -80306,7 +80312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 718342399271814317}
   can_go_down: 0
-  button: {fileID: 0}
+  button: {fileID: 284073063}
 --- !u!95 &718342399271814317
 Animator:
   serializedVersion: 3
