@@ -45,8 +45,9 @@ public class PickUpCoinSound : MonoBehaviour
             GameObject.Find("coins").GetComponentInChildren<CoinUp>().total_coin += 1;
             //GameObject.Find("coins").GetComponent<Text>().text = GameObject.Find("coins").GetComponent<Text>().text + GameObject.Find("coins").GetComponentInChildren<CoinUp>().total_coin;
             //gameObject.SetActive(false);
-            gameObject.transform.Translate(0, -10, 0);
-            gold_coin.SetActive(false);
+            gameObject.transform.Translate(0, -1000, 0);
+            //gold_coin.SetActive(false);
+            //gameObject.SetActive(false);
         }
     }
 

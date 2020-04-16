@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5777573101011109468
+--- !u!1 &606706844900688802
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3630066977571161572}
-  - component: {fileID: 3388845176380963911}
-  - component: {fileID: 8363216499991159613}
+  - component: {fileID: 7648785727278628890}
+  - component: {fileID: 8593708172823214521}
+  - component: {fileID: 3194593300483712707}
   m_Layer: 0
   m_Name: 'GoldCoin '
   m_TagString: Untagged
@@ -18,35 +18,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3630066977571161572
+--- !u!4 &7648785727278628890
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5777573101011109468}
+  m_GameObject: {fileID: 606706844900688802}
   m_LocalRotation: {x: -0, y: -0, z: -0.0000000037252903, w: 1}
   m_LocalPosition: {x: 0.07744829, y: 0.01515809, z: -0.113137566}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
-  m_Father: {fileID: 7171574708163334593}
+  m_Father: {fileID: 4306542429236122687}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3388845176380963911
+--- !u!33 &8593708172823214521
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5777573101011109468}
+  m_GameObject: {fileID: 606706844900688802}
   m_Mesh: {fileID: 4300000, guid: 5f9ee1799e7f21548ba0dd65ac83ea7f, type: 3}
---- !u!23 &8363216499991159613
+--- !u!23 &3194593300483712707
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5777573101011109468}
+  m_GameObject: {fileID: 606706844900688802}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -79,7 +79,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &7173331994950060803
+--- !u!1 &4308167789643124477
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,41 +87,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7171574708163334593}
-  - component: {fileID: 2598369152948287373}
-  - component: {fileID: 2598369152948287472}
-  - component: {fileID: 2598369152948287375}
-  - component: {fileID: 2598369152948287372}
-  - component: {fileID: 2598369152948287474}
+  - component: {fileID: 4306542429236122687}
+  - component: {fileID: 8956012919998689907}
+  - component: {fileID: 8956012919998689806}
+  - component: {fileID: 8956012919998689905}
+  - component: {fileID: 8956012919998689906}
+  - component: {fileID: 8956012919998689804}
   m_Layer: 0
-  m_Name: MonetaOro_nuovo
+  m_Name: MonetaOro (1)
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7171574708163334593
+--- !u!4 &4306542429236122687
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7173331994950060803}
+  m_GameObject: {fileID: 4308167789643124477}
   m_LocalRotation: {x: 0.22842294, y: 0.21844299, z: 0.6856715, w: 0.6557135}
-  m_LocalPosition: {x: -0.56, y: 0.21, z: -3.67}
+  m_LocalPosition: {x: -1.47, y: 0.21, z: -3.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3630066977571161572}
+  - {fileID: 7648785727278628890}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 36.850002, z: 92.559006}
---- !u!54 &2598369152948287373
+--- !u!54 &8956012919998689907
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7173331994950060803}
+  m_GameObject: {fileID: 4308167789643124477}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -131,26 +131,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!135 &2598369152948287472
+--- !u!135 &8956012919998689806
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7173331994950060803}
+  m_GameObject: {fileID: 4308167789643124477}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!82 &2598369152948287375
+--- !u!82 &8956012919998689905
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7173331994950060803}
+  m_GameObject: {fileID: 4308167789643124477}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -240,30 +240,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2598369152948287372
+--- !u!114 &8956012919998689906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7173331994950060803}
+  m_GameObject: {fileID: 4308167789643124477}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e33215bb6c7956e4097841ad0e0b886d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 2
---- !u!114 &2598369152948287474
+--- !u!114 &8956012919998689804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7173331994950060803}
+  m_GameObject: {fileID: 4308167789643124477}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 256d4e465920b5242a8acce7c8763b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   coinSound: {fileID: 8300000, guid: 69b6265bc4e9b1a4ebbeb208f202adf9, type: 3}
-  gold_coin: {fileID: 5777573101011109468}
+  gold_coin: {fileID: 606706844900688802}
