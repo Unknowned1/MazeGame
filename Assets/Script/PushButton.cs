@@ -10,6 +10,7 @@ public class PushButton : MonoBehaviour
     public GameObject door;
     bool showGUI;
     public bool buttonPressed;
+    public bool playerEnter;
 
     // Start is called before the first frame update
     void Start()
@@ -17,34 +18,39 @@ public class PushButton : MonoBehaviour
         animator = GetComponent<Animator>();
         showGUI = false;
         buttonPressed = false;
+        playerEnter = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-
-        if (Input.GetKeyDown("e"))
+        if (playerEnter)
         {
-            animator.Play("PressButton");
-            buttonPressed = true;
-            door.GetComponent<DoorDown>().enabled = true;
-        }
-        else
-        {
-            animator.Play("Idle");
-            buttonPressed = false;
+            if (Input.GetKeyDown("e"))
+            {
+                animator.Play("PressButton");
+                buttonPressed = true;
+                door.GetComponent<DoorDown>().enabled = true;
+            }
+            else
+            {
+                animator.Play("Idle");
+                buttonPressed = false;
+            }
         }
     }
 
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Player") showGUI = true;
+        playerEnter = true;
+
     }
 
     void OnTriggerExit(Collider col)
     {
         if (col.gameObject.tag == "Player") showGUI = false;
+        playerEnter = false;
     }
 
     void OnGUI()
