@@ -10,29 +10,21 @@ public class PickUpCoinSound : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip coinSound;
     public GameObject gold_coin;
-
+    
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         GetComponent<AudioSource>().clip = coinSound;
-        gold_coin = GetComponent<GameObject>();
+        //gold_coin = GetComponent<GameObject>();
+        
     }
 
-    
- /*   public void OnCollisionEnter(Collision col)
+    private void Update()
     {
-        if (col.collider.tag == "Player"){
-
-            audioSource = GetComponent<AudioSource>();
-            audioSource.clip = coinSound;
-            audioSource.Play();
-            Debug.Log("coin picked up");
-
-            //gameObject.SetActive(false);
-            //Destroy(gameObject);
-        }
+        //gold_coin = GetComponent<GameObject>();
+        
     }
-*/
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -42,6 +34,7 @@ public class PickUpCoinSound : MonoBehaviour
             audioSource.Play();
             Debug.Log("coin picked up");
 
+            
             GameObject.Find("coins").GetComponentInChildren<CoinUp>().total_coin += 1;
             //GameObject.Find("coins").GetComponent<Text>().text = GameObject.Find("coins").GetComponent<Text>().text + GameObject.Find("coins").GetComponentInChildren<CoinUp>().total_coin;
             //gameObject.SetActive(false);
