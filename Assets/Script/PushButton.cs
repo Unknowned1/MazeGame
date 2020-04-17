@@ -7,6 +7,7 @@ public class PushButton : MonoBehaviour
     // this.gameobject = the button
     public Animator animator;
     public GameObject player;
+    public GameObject door;
     bool showGUI;
     public bool buttonPressed;
 
@@ -23,10 +24,11 @@ public class PushButton : MonoBehaviour
     {
         
 
-        if (Input.GetKey("e"))
+        if (Input.GetKeyDown("e"))
         {
             animator.Play("PressButton");
             buttonPressed = true;
+            door.GetComponent<DoorDown>().enabled = true;
         }
         else
         {
