@@ -23,7 +23,7 @@ public class GameOverSceneManager : MonoBehaviour
 
     public void Retry()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void Exit()
