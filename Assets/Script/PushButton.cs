@@ -26,7 +26,7 @@ public class PushButton : MonoBehaviour
     {
         if (playerEnter)
         {
-            if (Input.GetKeyDown("e"))
+            if (Input.GetKey("e"))
             {
                 animator.Play("PressButton");
                 buttonPressed = true;
