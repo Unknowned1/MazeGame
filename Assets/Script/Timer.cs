@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
@@ -12,7 +13,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        time = 500;
+        time = 120;
         timer = GetComponent<Text>();
         timer_text = timer.text;
 
@@ -24,5 +25,9 @@ public class Timer : MonoBehaviour
         time -= 1 * Time.deltaTime;
 
         timer.text = timer_text + (int)time;
+
+        if (time <= 0) {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }
