@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
 
+    public void ChangeToMainMenu() {
+        SceneManager.LoadScene("MainMenu");
+    }
 
     public void ChangeToTutorial() {
         SceneManager.LoadScene("Tutorial");
