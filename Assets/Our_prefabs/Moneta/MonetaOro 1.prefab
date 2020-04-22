@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256d4e465920b5242a8acce7c8763b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinSound: {fileID: 8300000, guid: 69b6265bc4e9b1a4ebbeb208f202adf9, type: 3}
+  coinSound: {fileID: 8300000, guid: 1893aec28d260cb438148ef8b9523459, type: 3}
   gold_coin: {fileID: 4106953281993253118}
 --- !u!1 &4106953281993253118
 GameObject:
