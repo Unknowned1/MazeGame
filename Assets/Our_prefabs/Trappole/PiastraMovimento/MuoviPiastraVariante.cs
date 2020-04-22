@@ -15,15 +15,15 @@ public class MuoviPiastraVariante : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.x <= minimo)
+        if ( transform.position.x >= minimo )
         {
             speedAmt1 = -speedAmt;
         }
-        if (transform.position.x >= massimo)
+        if ( transform.position.x <= massimo )
         {
             speedAmt1 = speedAmt;
         }
-        transform.Translate(speedAmt1 * Time.deltaTime, 0, 0);
+        transform.Translate( speedAmt1 * Time.deltaTime , 0 , 0 );
     
     }
 }
