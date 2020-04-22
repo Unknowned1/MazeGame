@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class RuotaCerchio : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float speed;
+    
 
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(new Vector3(speed * Time.deltaTime, 0, 0),Space.World);
     }
 }
