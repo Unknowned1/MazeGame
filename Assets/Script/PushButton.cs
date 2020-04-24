@@ -42,19 +42,20 @@ public class PushButton : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Player") showGUI = true;
+        if (col.gameObject.tag == "Player") // showGUI = true;
         playerEnter = true;
 
     }
 
     void OnTriggerExit(Collider col)
     {
-        if (col.gameObject.tag == "Player") showGUI = false;
+        if (col.gameObject.tag == "Player") // showGUI = false;
         playerEnter = false;
     }
 
-    void OnGUI()
+    /*void OnGUI()
     {
         if (showGUI) GUI.TextArea(new Rect(500, 300, 100, 30), "Hold E to push ");
     }
+    */
 }
