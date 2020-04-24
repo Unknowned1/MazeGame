@@ -1,5 +1,6 @@
 ﻿using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityStandardAssets.Characters.FirstPerson;
 
 
@@ -13,6 +14,15 @@ public class EndTrigger : MonoBehaviour
 
     private void Update()
     {
+        if (level_completed_ui.activeInHierarchy)
+        {
+            if (Input.GetKey(KeyCode.C))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                Debug.Log("next level");
+            }
+        }
+
         if (GameObject.Find("timer").GetComponentInChildren<Timer>().time <= 0) {
             game_over_panel.SetActive(true);
             panel_basic_ui.SetActive(false);
@@ -46,13 +56,25 @@ public class EndTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player") {
+        if (other.tag == "Player")
+        {
             panel_basic_ui.SetActive(false);
             level_completed_ui.SetActive(true);
             GameObject.Find("FPSController").GetComponent<FirstPersonController>().enabled = false;
+
             
             // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIntex +1 );
         }
+
+        /*if (other.tag == "Player" && this.tag == "invisible_plat")
+        {
+            game_over_panel.SetActive(true);
+
+            panel_basic_ui.SetActive(false);
+            pause_panel.SetActive(false);
+            level_completed_ui.SetActive(false);
+        }
+        */
     }
 
     

@@ -24,13 +24,18 @@ public class GameOverSceneManager : MonoBehaviour
     public void Retry()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1 );
-        Debug.Log("clicked");
+        
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Debug.Log("clicked");
+        
     }
 
     public void Exit()
     {
-        Application.Quit();
-        Debug.Log("Quit");
+        if (Input.GetKey(KeyCode.Q))
+        {
+            Application.Quit();
+            Debug.Log("Quit");
+        }
     }
 }
