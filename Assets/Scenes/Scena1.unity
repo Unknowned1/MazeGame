@@ -27131,7 +27131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620399066}
   m_LocalRotation: {x: -0, y: -0.017133461, z: -0, w: 0.99985325}
-  m_LocalPosition: {x: -25.02, y: 3.53, z: -1.91}
+  m_LocalPosition: {x: -24.9, y: 4.65, z: 26.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1620234232}
@@ -27399,7 +27399,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.88186646
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
