@@ -39,7 +39,7 @@ public class FallingGameOver : MonoBehaviour
             GameObject.Find("game_over_panel").GetComponent<GameObject>().SetActive(true);
         }
         */
-        if (other.tag == "Player" && this.tag == "invisible_plat")
+        if (other.tag == "Player" )
         {
            
             game_over_panel.SetActive(true);

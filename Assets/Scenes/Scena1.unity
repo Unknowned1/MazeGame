@@ -9238,6 +9238,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: game_over_flat
       objectReference: {fileID: 0}
+    - target: {fileID: 5932487448751089192, guid: 9aed80bc9d996c54eb4e24eb9af771c4,
+        type: 3}
+      propertyPath: game_over_panel
+      value: 
+      objectReference: {fileID: 257545201}
     - target: {fileID: 5932487448751089195, guid: 9aed80bc9d996c54eb4e24eb9af771c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9298,8 +9303,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 64.79733
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5932487448751089192, guid: 9aed80bc9d996c54eb4e24eb9af771c4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aed80bc9d996c54eb4e24eb9af771c4, type: 3}
 --- !u!1001 &554049557
 PrefabInstance:
@@ -15311,29 +15315,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1542015507}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &970037519 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5932487448751089191, guid: 9aed80bc9d996c54eb4e24eb9af771c4,
-    type: 3}
-  m_PrefabInstance: {fileID: 553326909}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &970037524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970037519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eaf09299877ac84eb7f2771c16bfca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel_basic_ui: {fileID: 237558396}
-  level_completed_ui: {fileID: 1359043367}
-  game_over_panel: {fileID: 257545201}
-  pause_panel: {fileID: 1374617445}
-  player: {fileID: 1620399066}
 --- !u!1001 &972907176
 PrefabInstance:
   m_ObjectHideFlags: 0
